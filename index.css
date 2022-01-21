@@ -1,0 +1,16 @@
+.conatiner {
+  padding: 50px;
+  /* padding-left: 350px;  */
+  border-radius: 30px;
+  border-color: black;
+  border-style: solid;
+  background-color: coral;
+}
+
+h1 {
+  padding-left: 50px;
+}
+
+li {
+  padding-bottom: 50px;
+}
