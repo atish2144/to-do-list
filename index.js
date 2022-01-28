@@ -13,6 +13,11 @@ if (ls) {
   display();
 }
 inputBtn.addEventListener("click", function () {
+  if (inputEl.value == "") {
+    alert("input cannot be empty");
+    return;
+  }
+
   myarr.push(inputEl.value);
   inputEl.value = "";
   //  console.log(myarr);
@@ -40,7 +45,7 @@ function display() {
     a += `
           <li> 
     
-                  ${myarr[i]}  <button onclick="deletevalue('${i}')">Delete</button>
+                  ${myarr[i]}  <button onclick="deletevalue('${i}')">x</button>
           
           </li>`;
   }
